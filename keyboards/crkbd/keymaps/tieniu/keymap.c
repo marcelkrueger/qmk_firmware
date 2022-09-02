@@ -53,7 +53,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       KC_LALT,    KC_A,    KC_S,    KC_D,    KC_F,    KC_G,                         KC_H,    KC_J,    KC_K,    KC_L, KC_SCLN, KC_QUOT,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LSFT,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                         KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH,  MT(KC_RCTL,KC_ESC), //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                        MT(MOD_LGUI, KC_ESC), KC_RAISE, KC_LCTL,    KC_RSFT, KC_LOWER, KC_LGUI
+                                        MT(MOD_LGUI, KC_ESC), KC_RAISE, MT(MOD_LCTL,KC_TAB),    KC_RSFT, KC_LOWER, KC_LGUI
                                       //`--------------------------'  `------------LOWER----------'
 
   ),
@@ -72,11 +72,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_RAISE] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-       _______, KC_EXLM,   KC_AT, KC_HASH, KC_DLR, KC_PERC,                     KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_BSPC,
+       _______,KC_AT, KC_UNDS, KC_LBRACKET, KC_RBRACKET, KC_CIRC,   KC_EXLM, KC_LT, KC_GT, KC_EQL, KC_AMPR, KC_BSPC,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      _______, XXXXXXX, XXXXXXX, KC_LCBR, TD(TD_LP_RP), TD(TD_LC_RC),           KC_MINS,   KC_EQL, KC_BSLS, KC_GRV, KC_COLN ,  KC_DQT,
+      _______, KC_BSLS, KC_SLSH, KC_LCBR, KC_RCBR, KC_ASTR,           KC_QUES,   KC_LPRN, KC_RPRN, KC_MINS, KC_COLN ,  KC_DQT,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      _______, XXXXXXX, XXXXXXX, KC_RCBR, TD(TD_LB_RB), TD(TD_LA_RA),           KC_UNDS, KC_PLUS, KC_PIPE, KC_TILD, XXXXXXX, XXXXXXX,
+      _______, KC_HASH, KC_DLR, KC_PIPE, KC_TILD, KC_GRV,             KC_PLUS, KC_PERC, KC_DQT, KC_QUOT, KC_SCLN, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                           _______, _______,  _______,     _______, _______, _______
                                       //`--------------------------'  `--------------------------'
